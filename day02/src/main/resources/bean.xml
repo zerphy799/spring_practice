@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+     <bean id="teacherService" class="com.xzit.injection.TeacherService">
+         <property name="name" value="张老师"/>
+         <property name="age" value="35" />
+         <property name="addrs">
+                 <list>
+                     <value> 南京</value>
+                   <value>重庆</value>
+                     <value> 北京</value>
+                 </list>
+         </property>
+         <property name="list">
+             <list>
+                 <value> 1 </value>
+                 <value> 2 </value>
+                 <value> 3 </value>
+             </list>
+         </property>
+         <property name="map">
+             <map>
+                 <entry key="语文" value="80.5"/>
+                 <entry key="数学" value="88.2"/>
+                 <entry key="英语" value="84.5"/>
+             </map>
+         </property>
+         <property name="properties">
+             <props>
+                 <prop key="sb">111</prop>
+             </props>
+         </property>
+     </bean>
+    <bean id="student" class="com.xzit.homework.Student">
+        <property name="students">
+            <list>
+                <ref bean="a"/>
+                <ref bean="b"/>
+                <ref bean="c"/>
+                <ref bean="d"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="a" class="com.xzit.homework.Student" p:name="张三" p:gender="男"/>
+    <bean id="b" class="com.xzit.homework.Student" p:name="李四" p:gender="男"/>
+    <bean id="c" class="com.xzit.homework.Student" p:name="王五" p:gender="女"/>
+    <bean id="d" class="com.xzit.homework.Student" p:name="赵六" p:gender="男"/>
+
+    <bean id="student1" class="com.xzit.homewwork2.Student1">
+        <property name="students">
+            <list>
+                <ref bean="z"/>
+                <ref bean="x"/>
+                <ref bean="v"/>
+                <ref bean="n"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="z" class="com.xzit.homewwork2.Student1" p:name="张三" p:libraryCard="红色A类借书证"/>
+    <bean id="x" class="com.xzit.homewwork2.Student1" p:name="李四" p:libraryCard="蓝色A类借书证"/>
+    <bean id="v" class="com.xzit.homewwork2.Student1" p:name="王五" p:libraryCard="红色B类借书证"/>
+    <bean id="n" class="com.xzit.homewwork2.Student1" p:name="赵六" p:libraryCard="蓝色B类借书证"/>
+</beans>

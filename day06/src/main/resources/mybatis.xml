@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 环境配置 -->
+
+    <!-- 映射文件注册 -->
+    <mappers>
+        <!-- 方式1：注册单个Mapper xml文件 -->
+        <!-- <mapper resource="mapper/UserMapper.xml"/> -->
+        <!-- 方式2：扫描整个mapper包（推荐） -->
+        <!-- <package name="com.demo.mapper"/> -->
+    </mappers>
+</configuration>

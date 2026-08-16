@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/.idea/queries/Query.sql" value="a4977b03-e6ca-4f17-b16d-18f37e4fee94" />
+    <file url="file://$PROJECT_DIR$/day06/src/main/java/com/xzit/mapper/countMapper.java" value="a4977b03-e6ca-4f17-b16d-18f37e4fee94" />
+  </component>
+</project>
